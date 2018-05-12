@@ -16,7 +16,11 @@
 	<url>http://maven.apache.org</url>
 
 	<dependencies>
-
+		<dependency>
+			<groupId>per.sn.mini.o</groupId>
+			<artifactId>miniO-api</artifactId>
+			<version>0.1</version>
+		</dependency>
 	</dependencies>
 
 	<build>
