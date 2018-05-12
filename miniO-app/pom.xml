@@ -12,7 +12,7 @@
 	<packaging>war</packaging>
 
 	<name>miniO-rest</name>
-	<description>miniO rest</description>
+	<description>miniO app</description>
 	<url>http://maven.apache.org</url>
 
 	<dependencies>
@@ -22,9 +22,10 @@
 			<version>0.1</version>
 			<type>pom</type>
 		</dependency>
+
 		<dependency>
 			<groupId>per.sn.mini.o</groupId>
-			<artifactId>miniO-api</artifactId>
+			<artifactId>miniO-core</artifactId>
 			<version>0.1</version>
 		</dependency>
 
@@ -50,7 +51,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>miniO-rest</finalName>
+		<finalName>miniO-app</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
