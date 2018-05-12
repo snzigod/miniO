@@ -8,7 +8,7 @@
 		<artifactId>miniO</artifactId>
 		<version>0.1</version>
 	</parent>
-	<artifactId>miniO-rest</artifactId>
+	<artifactId>miniO-app</artifactId>
 	<packaging>war</packaging>
 
 	<name>miniO-rest</name>
