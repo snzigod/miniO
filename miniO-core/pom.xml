@@ -22,12 +22,6 @@
 			<version>0.1</version>
 			<type>pom</type>
 		</dependency>
-
-		<dependency>
-			<groupId>per.sn.mini.o</groupId>
-			<artifactId>miniO-api</artifactId>
-			<version>0.1</version>
-		</dependency>
 	</dependencies>
 
 	<build>
