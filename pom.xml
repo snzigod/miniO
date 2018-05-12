@@ -33,7 +33,7 @@
 		<module>./miniO-api</module>
 		<module>./miniO-core</module>
 
-		<module>./miniO-rest</module>
+		<module>./miniO-app</module>
 		<module>./miniO-web</module>
 	</modules>
 
