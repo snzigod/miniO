@@ -28,9 +28,8 @@
 
 	<modules>
 		<module>./miniO-config</module>
-		<module>./miniO-util</module>
 
-		<module>./miniO-api</module>
+		<module>./miniO-util</module>
 		<module>./miniO-core</module>
 
 		<module>./miniO-app</module>
