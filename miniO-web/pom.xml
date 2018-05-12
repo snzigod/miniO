@@ -8,27 +8,21 @@
 		<artifactId>miniO</artifactId>
 		<version>0.1</version>
 	</parent>
-
 	<artifactId>miniO-web</artifactId>
 	<packaging>war</packaging>
 
 	<name>miniO-web</name>
-	<description>网办门户restful接口</description>
+	<description>miniO web</description>
 	<url>http://maven.apache.org</url>
 
-	<organization>
-		<name>iflytek</name>
-		<url>http://www.iflytek.com</url>
-	</organization>
-
-	<properties>
-		<spring.version>3.0.5.RELEASE</spring.version>
-		<jetty.version>7.6.14.v20131031</jetty.version>
-		<webserver.port>8080</webserver.port>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
 	<dependencies>
+		<dependency>
+			<groupId>per.sn.mini.o</groupId>
+			<artifactId>miniO-config</artifactId>
+			<version>0.1</version>
+			<type>pom</type>
+		</dependency>
+
 		<!-- spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -65,7 +59,9 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<encoding>UTF-8</encoding>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+					<encoding>${source.encoding}</encoding>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -103,7 +99,7 @@
 				<configuration>
 					<connectors>
 						<connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
-							<port>${webserver.port}</port>
+							<port>${web.port}</port>
 						</connector>
 					</connectors>
 					<webAppConfig>

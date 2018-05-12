@@ -12,24 +12,17 @@
 	<packaging>war</packaging>
 
 	<name>miniO-rest</name>
-	<description>miniO-rest</description>
+	<description>miniO rest</description>
 	<url>http://maven.apache.org</url>
 
-	<properties>
-		<jersey2.version>2.6</jersey2.version>
-
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>3.2.9.RELEASE</spring.version>
-
-		<jdk.version>1.6</jdk.version>
-		<tomcat.version>2.2</tomcat.version>
-		<jetty.version>7.6.14.v20131031</jetty.version>
-		<webserver.port>8081</webserver.port>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<downloadSources>true</downloadSources>
-	</properties>
-
 	<dependencies>
+		<dependency>
+			<groupId>per.sn.mini.o</groupId>
+			<artifactId>miniO-config</artifactId>
+			<version>0.1</version>
+			<type>pom</type>
+		</dependency>
+
 		<!--jersey -->
 		<dependency>
 			<groupId>org.glassfish.jersey.containers</groupId>
@@ -58,7 +51,9 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<encoding>UTF-8</encoding>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+					<encoding>${source.encoding}</encoding>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -96,7 +91,7 @@
 				<configuration>
 					<connectors>
 						<connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
-							<port>${webserver.port}</port>
+							<port>${rest.port}</port>
 						</connector>
 					</connectors>
 					<webAppConfig>
