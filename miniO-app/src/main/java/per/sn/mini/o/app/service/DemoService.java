@@ -2,7 +2,7 @@ package per.sn.mini.o.app.service;
 
 import org.springframework.stereotype.Service;
 
-import per.sn.mini.o.api.dto.DemoDto;
+import per.sn.mini.o.app.vo.DemoVo;
 
 @Service
 public class DemoService {
@@ -11,8 +11,8 @@ public class DemoService {
 		return "hello, " + name;
 	}
 
-	public String sayHello(DemoDto dto) {
-		return "hello, " + dto.getName();
+	public String sayHello(DemoVo vo) {
+		return "hello, " + vo.getName();
 	}
 
 }
