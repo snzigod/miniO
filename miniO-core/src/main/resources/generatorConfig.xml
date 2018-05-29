@@ -13,8 +13,8 @@
 		</commentGenerator>
 
 		<jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
-			connectionURL="jdbc:oracle:thin:@172.31.1.32:1521:SCJGDB" userId="U_ZJ_ZLJD"
-			password="C5DOd5Y6mC" />
+			connectionURL="jdbc:oracle:thin:@127.0.0.1:1521:test" userId="test"
+			password="test" />
 
 		<javaModelGenerator targetPackage="per.sn.mini.o.core.entity"
 			targetProject="./src/main/java">
