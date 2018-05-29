@@ -10,7 +10,8 @@ import javax.ws.rs.QueryParam;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import per.sn.mini.o.app.service.DemoService;
+import per.sn.mini.o.api.dto.DemoDto;
+import per.sn.mini.o.api.service.DemoService;
 import per.sn.mini.o.app.vo.DemoVo;
 
 @Path("demo")
@@ -34,7 +35,9 @@ public class DemoRest {
 	@GET
 	@Path("/getBeanParam")
 	public String getBeanParam(@BeanParam DemoVo vo) {
-		return demoService.sayHello(vo);
+		DemoDto dto = new DemoDto();
+
+		return demoService.sayHello(dto);
 	}
 
 	@POST
@@ -52,7 +55,9 @@ public class DemoRest {
 	@POST
 	@Path("/postBeanParam")
 	public String postBeanParam(@BeanParam DemoVo vo) {
-		return demoService.sayHello(vo);
+		DemoDto dto = new DemoDto();
+
+		return demoService.sayHello(dto);
 	}
 
 }

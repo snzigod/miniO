@@ -13,8 +13,8 @@
 		</commentGenerator>
 
 		<jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
-			connectionURL="jdbc:oracle:thin:@172.16.16.96:1521:orcl" userId="test"
-			password="qwe123" />
+			connectionURL="jdbc:oracle:thin:@172.16.16.96:1521:orcl" userId="csl"
+			password="iflytek" />
 
 		<javaModelGenerator targetPackage="per.sn.mini.o.core.entity"
 			targetProject="./src/main/java">
@@ -31,7 +31,7 @@
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 
-		<table tableName="T_ORDER" domainObjectName="Order"
+		<table tableName="T_DEMO" domainObjectName="Demo"
 			enableCountByExample="false" enableUpdateByExample="false"
 			enableDeleteByExample="false" enableSelectByExample="false"
 			selectByExampleQueryId="false">
