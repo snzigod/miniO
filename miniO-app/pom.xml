@@ -11,7 +11,7 @@
 	<artifactId>miniO-app</artifactId>
 	<packaging>war</packaging>
 
-	<name>miniO-rest</name>
+	<name>miniO-app</name>
 	<description>miniO app</description>
 	<url>http://maven.apache.org</url>
 
