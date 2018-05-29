@@ -3,11 +3,15 @@ package per.sn.mini.o.core.repository;
 import per.sn.mini.o.core.entity.Demo;
 
 public interface DemoMapper {
-	int deleteByPrimaryKey(String id);
+    int deleteByPrimaryKey(String id);
 
-	int insertSelective(Demo record);
+    int insert(Demo record);
 
-	Demo selectByPrimaryKey(String id);
+    int insertSelective(Demo record);
 
-	int updateByPrimaryKeySelective(Demo record);
+    Demo selectByPrimaryKey(String id);
+
+    int updateByPrimaryKeySelective(Demo record);
+
+    int updateByPrimaryKey(Demo record);
 }
