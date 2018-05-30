@@ -1,5 +1,6 @@
 # web服务
 - http://127.0.0.1:8080/miniO-web
+- http://127.0.0.1:8080/miniO-web/demo
 
 ## get请求
 - http://127.0.0.1:8080/miniO-web/demo/getParam?name=jerry
