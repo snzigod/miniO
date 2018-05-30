@@ -18,9 +18,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>per.sn.mini.o</groupId>
-			<artifactId>miniO-config</artifactId>
+			<artifactId>miniO-core</artifactId>
 			<version>0.1</version>
-			<type>pom</type>
 		</dependency>
 
 		<!-- spring -->

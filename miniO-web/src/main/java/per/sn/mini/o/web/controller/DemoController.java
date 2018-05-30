@@ -6,15 +6,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import per.sn.mini.o.web.biz.DemoBiz;
+import per.sn.mini.o.api.dto.DemoDto;
+import per.sn.mini.o.api.service.DemoService;
 import per.sn.mini.o.web.vo.DemoVo;
 
 @Controller
 @RequestMapping("/demo")
-public class DemoRest {
+public class DemoController {
 
 	@Autowired
-	private DemoBiz demoBiz;
+	private DemoService demoBiz;
 
 	@ResponseBody
 	@RequestMapping(value = "/getParam", method = RequestMethod.GET)
@@ -25,7 +26,9 @@ public class DemoRest {
 	@ResponseBody
 	@RequestMapping(value = "/getBeanParam", method = RequestMethod.GET)
 	public String getBeanParam(DemoVo vo) {
-		return demoBiz.sayHello(vo);
+		DemoDto dto = new DemoDto();
+
+		return demoBiz.sayHello(dto);
 	}
 
 	@ResponseBody
@@ -37,7 +40,9 @@ public class DemoRest {
 	@ResponseBody
 	@RequestMapping(value = "/postBeanParam", method = RequestMethod.POST)
 	public String postBeanParam(DemoVo vo) {
-		return demoBiz.sayHello(vo);
+		DemoDto dto = new DemoDto();
+
+		return demoBiz.sayHello(dto);
 	}
 
 }
