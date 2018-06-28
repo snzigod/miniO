@@ -18,8 +18,12 @@
 		<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
 		<init-param>
 			<param-name>jersey.config.server.provider.packages</param-name>
-			<param-value>per.sn.mini.o.app.base</param-value>
-			<param-value>per.sn.mini.o.app.rest</param-value>
+			<param-value>
+				per.sn.mini.o.app.base
+				per.sn.mini.o.app.rest
+			</param-value>
+			<param-name>jersey.config.server.wadl.disableWadl</param-name>
+			<param-value>false</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
