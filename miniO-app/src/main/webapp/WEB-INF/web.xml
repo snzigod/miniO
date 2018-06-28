@@ -22,8 +22,6 @@
 				per.sn.mini.o.app.base
 				per.sn.mini.o.app.rest
 			</param-value>
-			<param-name>jersey.config.server.wadl.disableWadl</param-name>
-			<param-value>false</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>

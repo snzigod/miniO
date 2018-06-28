@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import per.sn.mini.o.api.dto.DemoDto;
 import per.sn.mini.o.api.service.DemoService;
+import per.sn.mini.o.app.base.BaseReturnCode;
+import per.sn.mini.o.app.base.BusinessException;
 import per.sn.mini.o.app.vo.DemoVo;
 
 @Path("demo")
@@ -23,12 +25,18 @@ public class DemoRest {
 	@GET
 	@Path("getPathParam/{name}")
 	public String getPathParam(@PathParam("name") String name) {
+		if (true) {
+			throw new BusinessException(BaseReturnCode.BASE_BAD_REQUEST);
+		}
 		return demoService.sayHello(name);
 	}
 
 	@GET
 	@Path("getQueryParam")
 	public String getQueryParam(@QueryParam("name") String name) {
+		if (true) {
+			throw new BusinessException(BaseReturnCode.BASE_BAD_REQUEST);
+		}
 		return demoService.sayHello(name);
 	}
 
