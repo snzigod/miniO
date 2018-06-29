@@ -42,10 +42,11 @@ public class DemoRest {
 
 	@GET
 	@Path("/getBeanParam")
-	public String getBeanParam(@BeanParam DemoVo vo) {
-		DemoDto dto = new DemoDto();
+	public DemoVo getBeanParam(@BeanParam DemoVo vo) {
+		//DemoDto dto = new DemoDto();
 
-		return demoService.sayHello(dto);
+		//return demoService.sayHello(dto);
+		return vo;
 	}
 
 	@POST
