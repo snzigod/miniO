@@ -1,6 +1,7 @@
 package per.sn.mini.o.app.base;
 
 public enum BaseReturnCode implements IReturnCode {
+
     NORMAL_RETURN(0, "invoke success"),
     BASE_BAD_REQUEST(40400, "invalid url"),
     BASE_NOT_FOUND(40404, "invalid resource request"),
@@ -41,5 +42,5 @@ public enum BaseReturnCode implements IReturnCode {
     public String getMessage() {
         return message;
     }
-}
 
+}
