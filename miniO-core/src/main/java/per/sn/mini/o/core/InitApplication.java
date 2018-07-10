@@ -17,9 +17,6 @@ import per.sn.mini.o.core.repository.ExecuteSqlMapper;
 
 /**
  * 项目启动时预加载的资源
- * 
- * @author gxzhou2
- *
  */
 @Component
 public class InitApplication implements ApplicationListener<ContextRefreshedEvent> {
