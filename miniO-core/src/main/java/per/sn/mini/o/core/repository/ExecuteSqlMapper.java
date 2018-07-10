@@ -6,10 +6,7 @@ import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
 /**
- * 订单表
- * 
- * @author gxzhou2
- *
+ * ExecuteSqlMapper
  */
 @Repository
 public interface ExecuteSqlMapper {
