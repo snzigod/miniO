@@ -62,9 +62,6 @@ public class InitApplication implements ApplicationListener<ContextRefreshedEven
 
 	/**
 	 * sql类型
-	 * 
-	 * @author gxzhou2
-	 *
 	 */
 	enum SqlType {
 		/**
