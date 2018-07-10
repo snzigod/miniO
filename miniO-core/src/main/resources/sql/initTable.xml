@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tables id="initTable" name="初始化表结构">
+	<table id="T_DEMO">
+		<check>T_DEMO</check>
+		<sql>
+			create table T_DEMO
+			(
+			ID VARCHAR2(32) not null,
+			NAME VARCHAR2(200),
+			AGE NUMBER(3),
+			REMARK VARCHAR2(2000),
+			constraint PK_T_DEMO primary key (ID)
+			);
+
+			comment on table T_DEMO is
+			'示例表';
+
+			comment on column T_DEMO.ID is
+			'主键';
+
+			comment on column T_DEMO.NAME is
+			'姓名';
+
+			comment on column T_DEMO.AGE is
+			'年龄';
+
+			comment on column T_DEMO.REMARK is
+			'备注';
+		</sql>
+	</table>
+</tables>
